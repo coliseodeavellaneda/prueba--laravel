@@ -54,5 +54,6 @@ class GoogleAnalyticsService
         );
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $data = curl_exec($ch);                                                
-        return json_decode($data, true);                                      
+        return json_decode($data, true);      
+    }                                
 }
